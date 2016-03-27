@@ -8,36 +8,33 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.donePageUIController">
   <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #2f2f2f;" VBox.vgrow="ALWAYS">
       <children>
-            <Text layoutX="142.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendance Finished">
+            <Text fill="WHITE" layoutX="142.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendance Finished">
                <font>
                   <Font size="36.0" />
                </font>
             </Text>
-            <Text layoutX="131.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5 Present">
+            <Text fill="WHITE" layoutX="131.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5 Present">
                <font>
                   <Font size="24.0" />
                </font>
             </Text>
-            <Text layoutX="131.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 Absent">
+            <Text fill="WHITE" layoutX="131.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 Absent">
                <font>
                   <Font size="24.0" />
                </font>
             </Text>
-            <Text layoutX="131.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7 Total">
+            <Text fill="WHITE" layoutX="131.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7 Total">
                <font>
                   <Font size="24.0" />
                </font>
             </Text>
-            <Button layoutX="141.0" layoutY="290.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="84.0" text="Main Menu" />
-            <Button layoutX="423.0" layoutY="290.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="84.0" text="Close" />
+            <Button layoutX="141.0" layoutY="290.0" mnemonicParsing="false" onAction="#mainButtonPressed" prefHeight="35.0" prefWidth="84.0" text="Main Menu" />
+            <Button layoutX="423.0" layoutY="290.0" mnemonicParsing="false" onAction="#closeButtonPressed" prefHeight="35.0" prefWidth="84.0" text="Close" />
       </children>
     </AnchorPane>
   </children>
-  <stylesheets>
-    <URL value="@../workspace2/BasicApplication_css/BasicApplication.css" />
-  </stylesheets>
 </VBox>
