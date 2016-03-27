@@ -29,8 +29,8 @@ public class UIController {
 	@FXML protected void startAttendanceButtonPressed(ActionEvent event) throws IOException{
 		FXMLLoader loader = new FXMLLoader(UIController.class.getResource("setupPage.fxml"));
 		
-		VBox login = (VBox)loader.load();
-		Scene scene = new Scene(login);
+		VBox vbox = (VBox)loader.load();
+		Scene scene = new Scene(vbox);
 //		scene.getStylesheets().add(Main.class.getResource("application.css").toExternalForm());
 		Node source = (Node) event.getSource();
 		Stage stage = (Stage) source.getScene().getWindow();
@@ -43,7 +43,16 @@ public class UIController {
 		
 	}
 	
-	
+	@FXML protected void settingsButtonClicked(ActionEvent event) throws IOException{
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("settingBlueRoll.fxml"));
+		
+		VBox vbox = (VBox) loader.load();
+		Scene scene = new Scene (vbox);
+		Node source = (Node) event.getSource();
+		Stage stage = (Stage) source.getScene().getWindow();
+		stage.setScene(scene);
+		stage.show();
+	}
 	
 	@FXML protected void imageClicked(ActionEvent event){
 		System.out.println("Hello. The image was pressed.");

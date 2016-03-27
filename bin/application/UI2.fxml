@@ -13,7 +13,7 @@
       <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #2f2f2f;" VBox.vgrow="ALWAYS">
          <children>
             <Button fx:id="startAttendanceButton" layoutX="427.0" layoutY="164.0" mnemonicParsing="false" onAction="#startAttendanceButtonPressed" textAlignment="CENTER" />
-            <Button layoutX="435.0" layoutY="467.0" mnemonicParsing="false" text="Settings" />
+            <Button layoutX="435.0" layoutY="467.0" mnemonicParsing="false" onAction="#settingsButtonClicked" text="Settings" />
          </children>
       </AnchorPane>
    </children>

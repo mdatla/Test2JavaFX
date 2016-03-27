@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.settingsUIController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #2F2F2F;" VBox.vgrow="ALWAYS">
+      <children>
+            <TextField layoutX="69.0" layoutY="49.0" prefHeight="25.0" prefWidth="289.0" text="C:\\" />
+            <Button layoutX="366.0" layoutY="49.0" mnemonicParsing="false" text="Browse" />
+            <Text fill="WHITE" layoutX="69.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Default File Location" />
+            <Text fill="WHITE" layoutX="69.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Default Timer" />
+            <TextField layoutX="69.0" layoutY="128.0" prefHeight="25.0" prefWidth="229.0" promptText="Insert Time (In Seconds)" />
+            <Button layoutX="427.0" layoutY="299.0" mnemonicParsing="false" onAction="#cancelButtonClicked" prefHeight="39.0" prefWidth="72.0" text="Cancel" />
+            <Button layoutX="207.0" layoutY="299.0" mnemonicParsing="false" onAction="#saveButtonClicked" prefHeight="39.0" prefWidth="72.0" text="Save" />
+            <Button layoutX="69.0" layoutY="200.0" mnemonicParsing="false" text="Open File Location" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
