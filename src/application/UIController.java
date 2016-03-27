@@ -2,11 +2,15 @@ package application;
 
 import java.io.IOException;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
@@ -19,23 +23,30 @@ public class UIController {
 	@FXML Text DisplayText;
 	
 	@FXML TextField inputTextField;
+	
+	@FXML Button customButton;
 
-	@FXML protected void buttonPressed(ActionEvent event) throws IOException{
-		FXMLLoader loader = new FXMLLoader(UIController.class.getResource("UI2.fxml"));
+	@FXML protected void startAttendanceButtonPressed(ActionEvent event) throws IOException{
+		FXMLLoader loader = new FXMLLoader(UIController.class.getResource("setupPage.fxml"));
+		
 		VBox login = (VBox)loader.load();
 		Scene scene = new Scene(login);
+//		scene.getStylesheets().add(Main.class.getResource("application.css").toExternalForm());
 		Node source = (Node) event.getSource();
 		Stage stage = (Stage) source.getScene().getWindow();
 		stage.setScene(scene);
+		ListView list = (ListView)stage.getScene().lookup("#classListView");
+		ObservableList<String> classSource = FXCollections.observableArrayList(
+				"CSCE 325", "CSCE 378", "CSCE 451");
+		list.setItems(classSource);
 		stage.show();
-//		if(flag==0){
-//			DisplayText.setText("Toggle On");
-//			DisplayText.setFill(Color.WHITE);
-//			flag=1;
-//		}else{
-//			DisplayText.setText("Toggle Off");
-//			flag = 0;
-//		}
+		
+	}
+	
+	
+	
+	@FXML protected void imageClicked(ActionEvent event){
+		System.out.println("Hello. The image was pressed.");
 	}
 }
 

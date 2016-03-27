@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox prefHeight="612.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.setupPageController">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #2f2f2f;" VBox.vgrow="ALWAYS">
+         <children>
+            <ListView fx:id="classListView" layoutX="66.0" layoutY="69.0" prefHeight="492.0" prefWidth="200.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="633.0" AnchorPane.topAnchor="69.0" />
+            <Text fill="#d6d6d6" layoutX="528.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Timer" />
+            <TextField layoutX="528.0" layoutY="170.0" prefHeight="25.0" prefWidth="44.0" />
+            <TextField layoutX="651.0" layoutY="170.0" prefHeight="25.0" prefWidth="44.0" />
+            <Text fill="#d6d6d6" layoutX="584.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mins" />
+            <Text fill="#d6d6d6" layoutX="706.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seconds" />
+            <Button layoutX="528.0" layoutY="521.0" mnemonicParsing="false" onAction="#startButtonPressed" prefHeight="25.0" prefWidth="223.0" text="Start" />
+            <Text fill="#d6d6d6" layoutX="66.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Class" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

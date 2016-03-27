@@ -1,4 +1,13 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/*
 .root{
-	-fx-background-image: url("../../src/application/Image.jpg");
+	-fx-background-image: url("Image.jpg");
 }
+*/
+
+#startAttendanceButton{
+	-fx-graphic: url("button.png");
+}
+
+
