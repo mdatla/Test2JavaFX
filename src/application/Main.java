@@ -1,6 +1,11 @@
 package application;
 	
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import backend.Globals;
 import javafx.application.Application;
+import javafx.concurrent.Task;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;

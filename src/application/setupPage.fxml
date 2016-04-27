@@ -12,8 +12,8 @@
          <children>
             <ListView fx:id="classListView" layoutX="66.0" layoutY="69.0" prefHeight="492.0" prefWidth="200.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="633.0" AnchorPane.topAnchor="69.0" />
             <Text fill="#d6d6d6" layoutX="528.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Timer" />
-            <TextField layoutX="528.0" layoutY="170.0" prefHeight="25.0" prefWidth="44.0" />
-            <TextField layoutX="651.0" layoutY="170.0" prefHeight="25.0" prefWidth="44.0" />
+            <TextField fx:id="timerMin" layoutX="528.0" layoutY="170.0" prefHeight="25.0" prefWidth="44.0" />
+            <TextField fx:id="timerSec" layoutX="651.0" layoutY="170.0" prefHeight="25.0" prefWidth="44.0" text="30" />
             <Text fill="#d6d6d6" layoutX="584.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mins" />
             <Text fill="#d6d6d6" layoutX="706.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seconds" />
             <Button layoutX="528.0" layoutY="521.0" mnemonicParsing="false" onAction="#startButtonPressed" prefHeight="25.0" prefWidth="223.0" text="Start" />

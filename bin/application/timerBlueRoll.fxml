@@ -7,20 +7,21 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.timerUIController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
   <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #2f2f2f;" VBox.vgrow="ALWAYS">
-      <children>
-            <ProgressBar layoutX="194.0" layoutY="220.0" prefWidth="200.0" progress="0.0" />
-            <Button layoutX="404.0" layoutY="217.0" mnemonicParsing="false" text="Fill" />
-            <Button layoutX="194.0" layoutY="300.0" mnemonicParsing="false" text="Pause" />
-            <Button layoutX="394.0" layoutY="300.0" mnemonicParsing="false" onAction="#stopButtonClicked" text="Stop" />
-            <Text fill="WHITE" layoutX="174.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DEMO: This bar will fill automatiacally after backend is implemented">
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2f2f2f;" VBox.vgrow="NEVER">
+         <children>
+            <Label alignment="CENTER" layoutX="329.0" layoutY="185.0" prefHeight="67.0" prefWidth="243.0" text="Roll Call in Progress" textAlignment="CENTER" textFill="WHITE">
                <font>
-                  <Font size="9.0" />
+                  <Font size="24.0" />
                </font>
-            </Text>
-      </children>
+            </Label>
+            <Label alignment="CENTER" layoutX="295.0" layoutY="391.0" prefHeight="55.0" prefWidth="311.0" text="Please ensure devices are set to Discoverable" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
     </AnchorPane>
   </children>
 </VBox>

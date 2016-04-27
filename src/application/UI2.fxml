@@ -8,11 +8,11 @@
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<VBox prefHeight="612.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UIController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
-      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #2f2f2f;" VBox.vgrow="ALWAYS">
+      <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2f2f2f;" VBox.vgrow="ALWAYS">
          <children>
-            <Button fx:id="startAttendanceButton" layoutX="427.0" layoutY="164.0" mnemonicParsing="false" onAction="#startAttendanceButtonPressed" text="Take Attendance" textAlignment="CENTER" />
+            <Button fx:id="startAttendanceButton" layoutX="300.0" layoutY="120.0" mnemonicParsing="false" onAction="#startAttendanceButtonPressed" style="-fx-background-color: #2f2f2f;" textAlignment="CENTER" textFill="WHITE" />
             <Button layoutX="435.0" layoutY="467.0" mnemonicParsing="false" onAction="#settingsButtonClicked" text="Settings" />
          </children>
       </AnchorPane>
